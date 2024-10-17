@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2f2f2f; /* Cor de fundo suave */
+    color: #e0e0e0; /* Cor do texto */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+}
+
+h1 {
+    font-size: 28px; /* Tamanho da fonte */
+    color: #e0e0e0; /* Cor do texto */
+}
+
+.presentation-container {
+    display: flex; /* Cria um layout flexível */
+    flex-direction: row; /* Coloca os elementos na horizontal */
+    justify-content: space-between; /* Espaça os elementos */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    background-color: #222; /* Cor de fundo da apresentação */
+    border-radius: 12px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 1000px; /* Limita a largura da apresentação */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.presentation-description {
+    flex: 1; /* Permite que esta seção ocupe o espaço restante */
+    margin-right: 20px; /* Espaçamento à direita */
+}
+
+.character img {
+    width: 320px; /* Tamanho da imagem */
+    height: auto;
+    border-radius: 12px; /* Bordas arredondadas */
+    display: block; /* Necessário para a centralização */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.back-arrow {
+    display: inline-block;
+    margin-top: 20px; /* Espaçamento acima do botão */
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back-arrow:hover {
+    background-color: #555; /* Muda a cor ao passar o mouse */
+}
+
+p {
+    margin-bottom: 15px;  /* Espaço abaixo do parágrafo */
+}
+
+h2 {
+    margin-top: 20px;  /* Espaço acima do título */
+    margin-bottom: 10px;  /* Espaço abaixo do título */
+}
+
+h3 {
+    margin-top: 15px;  /* Espaço acima do subtítulo */
+    margin-bottom: 5px;  /* Espaço abaixo do subtítulo */
+}
+
+@media (max-width: 768px) {
+    .presentation-container {
+        flex-direction: column; /* Empilhar elementos verticalmente em telas menores */
+        align-items: center; /* Centralizar os itens */
+        padding: 10px;
+    }
+
+    .presentation-description {
+        margin-right: 0;
+        margin-bottom: 20px; /* Espaço extra entre texto e imagem em telas pequenas */
+    }
+
+    .character img {
+        width: 100%; /* Imagem ocupa a largura total */
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2, h3 {
+        text-align: center; /* Centralizar títulos em telas pequenas */
+    }
+}
